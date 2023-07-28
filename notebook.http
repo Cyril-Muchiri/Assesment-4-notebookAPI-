@@ -1,29 +1,31 @@
+
+### CREATE A NOTE
 POST http://localhost:4700/note
 Content-Type: application/json
 
 {
-    "title": "Church",
-    "content":"Go to church on Sunday",
-    "stamp":" ",
+    "title": "The Jitu",
+    "content":"Attend Stand up"
+
  
 }
 
 ### GET ALL NOTES
-GET http://localhost:4500/note
+GET http://localhost:4700/note
 
 ### GET ONE NOTE
-GET http://localhost:4500/note/
+GET http://localhost:4700/note/622a5ecf-f748-4b42-ac94-8d22fe3d8350
 
 ### UPDATING NOTE
-PUT http://localhost:4500/note/
+PUT http://localhost:4700/note/622a5ecf-f748-4b42-ac94-8d22fe3d8350
 Content-Type: application/json
 
 {
     "title": "Church",
-    "content":" Lead a choir",
-    "time_stamp":""
+    "content":"Lead a choir in the morning"
+   
     
 }
 
 ### DELETE NOTE BY ID
-DELETE http://localhost:4700/note/
+DELETE http://localhost:4700/note/622a5ecf-f748-4b42-ac94-8d22fe3d8350

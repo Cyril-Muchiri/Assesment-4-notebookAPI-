@@ -1,5 +1,5 @@
 const {Router} = require('express');
-const { createNote, getNotes, getOneNote, updateNote, deleteNote } = require('../Controllers/notesController');
+const {createNote, getNotes, getOneNote, updateNote, deleteNote } = require('../Controllers/notesController');
 
 
 const notesRouter = Router();
