@@ -1,0 +1,29 @@
+POST http://localhost:4700/note
+Content-Type: application/json
+
+{
+    "title": "Church",
+    "content":"Go to church on Sunday",
+    "stamp":" ",
+ 
+}
+
+### GET ALL NOTES
+GET http://localhost:4500/note
+
+### GET ONE NOTE
+GET http://localhost:4500/note/
+
+### UPDATING NOTE
+PUT http://localhost:4500/note/
+Content-Type: application/json
+
+{
+    "title": "Church",
+    "content":" Lead a choir",
+    "time_stamp":""
+    
+}
+
+### DELETE NOTE BY ID
+DELETE http://localhost:4700/note/
