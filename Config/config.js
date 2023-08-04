@@ -21,7 +21,7 @@ const sqlConfig = {
 
 mssql.connect(sqlConfig).then(pool =>{
     if(pool.connected){
-        console.log('connected to db ...');
+        console.log('************** connected to NoteBookDb **************');
     
     }
     else{
