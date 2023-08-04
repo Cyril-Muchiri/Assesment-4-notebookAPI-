@@ -55,7 +55,7 @@ describe('notesController',()=>{
             jest.spyOn(mssql, "connect").mockResolvedValueOnce({
                 request: jest.fn().mockReturnThis(),
                 execute: jest.fn().mockResolvedValueOnce({
-                    recordset: mockProject
+                    recordset: mockNote
                 })
             })
             await getNotes(request,res)
